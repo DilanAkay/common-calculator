@@ -9,7 +9,7 @@ import tkinter as tk
 # ----------------------
 # Tk() ile yeni bir pencere oluşturuyoruz
 pencere = tk.Tk()
-# Pencereye başlık veriyoruz
+# Pencereye başlık veriyoruz.
 pencere.title("💖 Hesap Makinesi 💖")
 # Pencerenin boyutunu ayarlıyoruz (genişlik x yükseklik)
 pencere.geometry("400x550")
