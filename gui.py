@@ -21,7 +21,7 @@ class HesapMakinesi:
             relief="flat",
             justify="right",
             bg="#fff0f5",
-            fg="#000000"   # ekran yazısı siyah
+            fg="#000000"  
         )
         self.ekran.grid(row=0, column=0, columnspan=4, padx=10, pady=20, ipady=10)
 
@@ -42,26 +42,26 @@ class HesapMakinesi:
             font=("Helvetica", 18),
             width=5, height=2,
             bg=renk,
-            fg="#4a148c",  # sayı ve işlem butonları mor
+            fg="#4a148c",  
             relief="ridge", bd=3,
             activebackground="#ffb6c1",
             command=lambda: self.ekran.insert("end", yazi)
         ).grid(row=satir, column=sutun, padx=8, pady=8)
 
     def temizle_hesapla_butonlari(self):
-        # C butonu (yazı siyah)
+        
         tk.Button(
             self.pencere, text="C", font=("Helvetica", 18), width=11, height=2,
-            bg="#ffb6c1", fg="#000000",  # siyah yazı
+            bg="#ffb6c1", fg="#000000",  
             command=lambda: temizle(self.ekran),
             relief="ridge", bd=3,
             activebackground="#ff9bb0"
         ).grid(row=5, column=0, columnspan=2, padx=8, pady=8)
 
-        # = butonu (yazı siyah)
+        
         tk.Button(
             self.pencere, text="=", font=("Helvetica", 18), width=11, height=2,
-            bg="#b19cd9", fg="#000000",  # siyah yazı
+            bg="#b19cd9", fg="#000000",  
             command=lambda: hesapla(self.ekran),
             relief="ridge", bd=3,
             activebackground="#d8b3ff"

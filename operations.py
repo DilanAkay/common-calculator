@@ -1,6 +1,6 @@
 
 def hesapla(ekran):
-    """Ekrandaki ifadeyi değerlendirip sonucu ekrana yazdırır."""
+    
     try:
         sonuc = eval(ekran.get())
         ekran.delete(0, "end")
@@ -10,6 +10,5 @@ def hesapla(ekran):
         ekran.insert("end", "Hata")
 
 def temizle(ekran):
-    """Ekranı temizler."""
     ekran.delete(0, "end")
 
