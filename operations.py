@@ -1,4 +1,3 @@
-
 def hesapla(ekran):
     
     try:
@@ -10,5 +9,5 @@ def hesapla(ekran):
         ekran.insert("end", "Hata")
 
 def temizle(ekran):
+    
     ekran.delete(0, "end")
-

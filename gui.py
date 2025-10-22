@@ -21,7 +21,7 @@ class HesapMakinesi:
             relief="flat",
             justify="right",
             bg="#fff0f5",
-            fg="#000000"  
+            fg="#000000"   
         )
         self.ekran.grid(row=0, column=0, columnspan=4, padx=10, pady=20, ipady=10)
 
@@ -58,7 +58,6 @@ class HesapMakinesi:
             activebackground="#ff9bb0"
         ).grid(row=5, column=0, columnspan=2, padx=8, pady=8)
 
-        
         tk.Button(
             self.pencere, text="=", font=("Helvetica", 18), width=11, height=2,
             bg="#b19cd9", fg="#000000",  
@@ -69,4 +68,3 @@ class HesapMakinesi:
 
     def run(self):
         self.pencere.mainloop()
-
